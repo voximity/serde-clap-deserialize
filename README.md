@@ -7,7 +7,7 @@ Small proc macro to add both default values to [clap] and [serde]. Inspired by
 #[serde_clap_deserialize]
 #[derive(Deserialize, Parser)]
 struct MyArgs {
-    #[serde(clap_deserialize(8))]
+    #[serde_clap_deserialize(8)]
     foo: u32,
 }
 
